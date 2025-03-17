@@ -5,11 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43d0e937-0772-4c9a-a2bf-b42da36cfe84" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/components/HomeComponents/CustomCarousel.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/HomeComponents/CustomEnterPanel.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/HomeComponents/CustomUserComment.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/HomeComponents/GoodsSlider.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/testsArray/CommentsArray.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/testsArray/GoodsTestArray.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/testsArray/HomeCarouselArray.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/About.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.eslintrc-auto-import.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintrc-auto-import.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/logo.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/CustomHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CustomHeader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/layouts/default.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/CurrentCandy.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/HomePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/HomePage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/styles/settings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/settings.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/router/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,24 +40,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/NotWindows/MyCode/CandyShop&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.1.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/VueJS/CandyShop",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.1.5\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\VueJS\CandyShop\client\src\components\HomeComponents" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-2e7d6887c066-JavaScript-WS-241.15989.47" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.18034.50" />
       </set>
     </attachedChunks>
   </component>
@@ -59,6 +79,7 @@
       <workItem from="1742199393298" duration="21000" />
       <workItem from="1742199529683" duration="579000" />
       <workItem from="1742200170499" duration="12589000" />
+      <workItem from="1742237311457" duration="9422000" />
     </task>
     <servers />
   </component>

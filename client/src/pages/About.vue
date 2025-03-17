@@ -1,8 +1,11 @@
 <template>
-  <h3>Current candy</h3>
+  <div>
+   about
+  </div>
 </template>
 
-<script>
+<script setup>
+
 
 </script>
 

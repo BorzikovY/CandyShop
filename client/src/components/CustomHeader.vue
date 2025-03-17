@@ -17,7 +17,8 @@
 <style lang="scss" scoped>
 .wrapper {
   height: 45px;
-  width: 100vw;
+  width: 100%;
+  max-width: 2199px;
   background: #E9E9E9;
   font-size: 16px;
   display: flex;
