@@ -16,15 +16,17 @@
 
 <style lang="scss" scoped>
 .wrapper {
-  height: 35px;
+  height: 45px;
   width: 100vw;
   background: #E9E9E9;
-  font-size: 13px;
+  font-size: 16px;
   display: flex;
   align-items: center;
   color: black;
   justify-content: space-between;
-  position: relative;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 
 .wrapper__contactInfo {
@@ -39,7 +41,7 @@
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .wrapper__cart {

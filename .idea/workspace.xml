@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43d0e937-0772-4c9a-a2bf-b42da36cfe84" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/CustomHeader.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/CurrentCandy.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/ErrorPage.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/HomePage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/CustomHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CustomHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/HomePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/HomePage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/settings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/settings.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +58,7 @@
       <updated>1742199391431</updated>
       <workItem from="1742199393298" duration="21000" />
       <workItem from="1742199529683" duration="579000" />
-      <workItem from="1742200170499" duration="7828000" />
+      <workItem from="1742200170499" duration="12589000" />
     </task>
     <servers />
   </component>
