@@ -1,19 +1,15 @@
 <template>
-  <div class="absolute">
     <div class="container">
-      <CustomHeader/>
-      <v-main class="customPadding">
+      <v-main>
         <router-view />
       </v-main>
     </div>
-  </div>
 
 
 
 </template>
 
 <script setup>
-import CustomHeader from "@/components/CustomHeader.vue"
 
 </script>
 
@@ -30,8 +26,5 @@ import CustomHeader from "@/components/CustomHeader.vue"
   border-right: 1px solid #E9E9E9;
 }
 
-.customPadding{
-  margin-top: 45px;
-  margin-bottom: 25px;
-}
+
 </style>

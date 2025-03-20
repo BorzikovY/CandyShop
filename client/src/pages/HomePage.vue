@@ -1,6 +1,6 @@
 <template>
 
-  <CustomEnterPanel/>
+  <CustomEnterPanel :isNameAndLogo=true />
 
   <CustomCarousel :arrayOfImages="HomeCarouselArray"/>
 
@@ -18,7 +18,7 @@
 //Components
 import CustomCarousel from "@/components/HomeComponents/CustomCarousel.vue"
 import GoodsSlider from "@/components/HomeComponents/GoodsSlider.vue"
-import CustomEnterPanel from "@/components/HomeComponents/CustomEnterPanel.vue";
+import CustomEnterPanel from "@/components/CustomEnterPanel.vue";
 import CustomUserComment from "@/components/HomeComponents/CustomUserComment.vue";
 
 
