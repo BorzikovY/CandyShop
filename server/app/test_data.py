@@ -1,4 +1,4 @@
-from server.app.graphql.graphql_schemas import Candy, Category
+from app.graphql.graphql_schemas import Candy, Category
 
 
 categories = [

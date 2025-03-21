@@ -1,2 +1,4 @@
 aiohttp==3.11.13
 strawberry-graphql==0.261.1
+pydantic-settings==2.8.1
+peewee-async==1.1.0
