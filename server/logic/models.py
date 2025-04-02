@@ -1,4 +1,8 @@
 from django.db import models
+from django.core.validators import (
+    MinValueValidator, 
+    MaxValueValidator
+)
 
 
 class Candy(models.Model):
@@ -81,3 +85,32 @@ class OrderedCandy(models.Model):
     
     def __str__(self) -> str:
         return f"Заказ - {self.order.pk}, конфета - {self.candy.pk}"
+
+
+class Feedback(models.Model):
+    class Meta:
+        verbose_name = "Отзыв"
+        verbose_name_plural = "Отзывы"
+    
+    author = models.CharField(
+        verbose_name="Автор",
+        max_length=32,
+        null=False,
+        blank=True
+    )
+    text = models.TextField(
+        verbose_name="Текст отзыва",
+        null=False,
+        blank=True
+    )
+    date = models.DateField(
+        verbose_name="Дата Создания",
+        auto_now_add=True
+    )
+    stars = models.PositiveSmallIntegerField(
+        verbose_name="Оценка",
+        validators=[MinValueValidator(1), MaxValueValidator(5)]
+    )
+
+    def __str__(self) -> str:
+        return self.author
