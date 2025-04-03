@@ -6,13 +6,11 @@ from rest_framework import (
 
 from logic.models import (
     Candy,
-    OrderedCandy,
     Order,
     Feedback
 )
 from api.serializers import (
     CandySerializer,
-    OrderedCandySerializer,
     OrderSerializer,
     FeedbackSerializer,
 )
