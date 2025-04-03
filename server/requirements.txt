@@ -1,2 +1,4 @@
-aiohttp==3.11.13
-strawberry-graphql==0.261.1
+Django==4.1
+djangorestframework==3.14.0
+drf-yasg==1.21.7
+python-dotenv==1.0.0
