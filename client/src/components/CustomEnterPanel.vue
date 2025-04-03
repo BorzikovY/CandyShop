@@ -14,10 +14,9 @@
       v-for="item in pagesArray"
       :key="item.id"
       :to="item.to"
-    ><p class="customAnimation">
+    >
       {{ item.name }}
 
-    </p>
     </router-link>
 
   </v-container>
@@ -77,10 +76,6 @@ const pagesArray = [
 
 <style lang="scss" scoped>
 
-.customAnimation{
 
-}:hover{
-  color: #836398;
- }
 
 </style>
