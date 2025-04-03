@@ -6,7 +6,7 @@ from drf_yasg import openapi
 
 from api.views import (
    CandyViewSet,
-   FeedbackViewSet,
+   FeedbackViewSet, OrderViewSet,
 )
 
 
@@ -23,6 +23,7 @@ schema_view = get_schema_view(
 router = DefaultRouter()
 router.register('candies', CandyViewSet, basename='candy')
 router.register('feedbacks', FeedbackViewSet, basename='feedback')
+router.register('orders', OrderViewSet, basename='order')
 
 urlpatterns = [
    path('swagger<format>/', schema_view.without_ui(cache_timeout=0), name='schema-json'),

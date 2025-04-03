@@ -4,10 +4,17 @@ from rest_framework import (
     permissions,
 )
 
-from logic.models import Candy, Feedback
+from logic.models import (
+    Candy,
+    OrderedCandy,
+    Order,
+    Feedback
+)
 from api.serializers import (
-    CandySerializer, 
-    FeedbackSerializer
+    CandySerializer,
+    OrderedCandySerializer,
+    OrderSerializer,
+    FeedbackSerializer,
 )
 
 
@@ -35,4 +42,16 @@ class CandyViewSet(
     """
     queryset = Candy.objects.all()
     serializer_class = CandySerializer
+    permission_classes = [permissions.AllowAny]
+
+
+class OrderViewSet(
+    viewsets.GenericViewSet,
+    mixins.ListModelMixin,
+):
+    """
+    ViewSet заказы.
+    """
+    queryset = Order.objects.all()
+    serializer_class = OrderSerializer
     permission_classes = [permissions.AllowAny]

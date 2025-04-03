@@ -50,6 +50,13 @@ class Order(models.Model):
         auto_now_add=True
     )
 
+    @property
+    def price(self) -> float:
+        return sum(
+            ordered_candy.price
+            for ordered_candy in OrderedCandy.objects.filter(order=self)
+        )
+
     def __str__(self) -> str:
         return str(self.date_time)
 
