@@ -27,7 +27,7 @@
           class="d-flex flex-nowrap align-center" style="width: 100%;">
             <v-container class="d-flex flex-wrap flex-column">
               <p style="font-size: 17px">{{ product.name }}</p>
-              <p style="font-size: 14px">{{ product.price }}/100гр</p>
+              <p style="font-size: 14px">{{ product.price }}/1гр</p>
             </v-container>
             <v-container class="align-center">
               <v-text-field placeholder="Сколько грамм?"/>
