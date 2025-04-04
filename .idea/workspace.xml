@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43d0e937-0772-4c9a-a2bf-b42da36cfe84" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/nginx/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/nginx.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CandyShop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CandyShop.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CustomCart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CustomCart.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CustomEnterPanel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CustomEnterPanel.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/layouts/default.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/About.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/About.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/stores/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/stores/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/server/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +43,7 @@
     "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable",
     "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.1.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
