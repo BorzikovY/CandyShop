@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43d0e937-0772-4c9a-a2bf-b42da36cfe84" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/components/testsArray/CartArray.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/GuaranteesPage.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/CustomCart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CustomCart.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CustomEnterPanel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CustomEnterPanel.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/layouts/default.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/About.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/About.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/stores/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/stores/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/HomeComponents/GoodsSlider.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/HomeComponents/GoodsSlider.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/StoreComponents/CustomGood.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/StoreComponents/CustomGood.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/StoreModal/StoreModal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/StoreModal/StoreModal.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Store.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Store.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/router/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,22 +33,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/NotWindows/MyCode/CandyShop",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.1.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/NotWindows/MyCode/CandyShop&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.1.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\NotWindows\MyCode\CandyShop\client\public" />
@@ -83,6 +88,7 @@
       <workItem from="1742546680155" duration="2000" />
       <workItem from="1742799221469" duration="38000" />
       <workItem from="1742802903377" duration="626000" />
+      <workItem from="1743700479032" duration="6338000" />
     </task>
     <servers />
   </component>

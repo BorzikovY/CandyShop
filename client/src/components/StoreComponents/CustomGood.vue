@@ -23,6 +23,9 @@
 
 <script setup>
 
+import axios from "axios";
+
+
 import CustomCart from "@/components/CustomCart.vue";
 
 defineProps({

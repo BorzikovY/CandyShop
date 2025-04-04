@@ -38,12 +38,7 @@
             <p style="height: 140px; display: flex; text-wrap: wrap">
               {{ good.description }}
             </p>
-            <v-btn
-              color="primary"
-              class="mt-2"
-            >
-              КУПИТЬ
-            </v-btn>
+
           </v-card-text>
         </v-card>
       </v-col>
