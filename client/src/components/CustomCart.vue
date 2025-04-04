@@ -3,22 +3,12 @@
     <template v-slot:activator="{ on, attrs }">
       <v-container
         v-bind="attrs"
-        v-on="on"
+        v-on="{ ...on, ...$attrs }"
         class="rounded-circle position-fixed bg-white cartCircle cursor-pointer"
       >
         <v-img sizes="48px" :src="cart" style="z-index: 11" />
       </v-container>
     </template>
-    <v-card>
-      <v-card-title>Корзина</v-card-title>
-      <v-card-text>
-        <v-list>
-          <v-list-item v-for="(product, index) in products" :key="index">
-            <v-list-item-title>{{ product.name }}</v-list-item-title>
-          </v-list-item>
-        </v-list>
-      </v-card-text>
-    </v-card>
   </v-menu>
 </template>
 

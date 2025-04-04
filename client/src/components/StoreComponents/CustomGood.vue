@@ -1,5 +1,4 @@
 <template>
-  <CustomCart/>
   <v-card
     class="mx-auto d-flex flex-column"
     max-width="340"
