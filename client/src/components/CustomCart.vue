@@ -63,23 +63,19 @@ const grams = reactive({});
 
 // Функция отправки данных на бекэнд
 const sendData = async () => {
-  // Формируем массив с данными товаров и введённым количеством грамм
   const orderItems = products.map(product => ({
     id: product.id,
     name: product.name,
-    price: product.price,
-    grams: Number(grams[product.id]) || 0  // преобразуем в число, если значение отсутствует – 0
+    weight: Number(grams[product.id]) || 0
   }));
 
-  console.log('Отправка данных:', orderItems);
-
   try {
-    const response = await axios.post('/api/orders', { items: orderItems });
-    console.log('Ответ сервера:', response.data);
+    await axios.post('/api/orders', { items: orderItems });
   } catch (error) {
     console.error('Ошибка при отправке данных:', error);
   }
 }
+
 </script>
 
 <style lang="scss" scoped>
