@@ -1,8 +1,9 @@
 from django.db import models
 from django.core.validators import (
-    MinValueValidator, 
+    MinValueValidator,
     MaxValueValidator
 )
+from logic.geolocation import generate_coordinates
 
 
 class Candy(models.Model):
@@ -22,6 +23,11 @@ class Candy(models.Model):
         null=False,
         blank=True,
     )
+    image = models.URLField(
+        verbose_name="Изображение",
+        null=True,
+        blank=True,
+    )
     price = models.DecimalField(
         verbose_name="Цена за 100 грамм",
         max_digits=10,
@@ -29,36 +35,9 @@ class Candy(models.Model):
         null=False,
         blank=True
     )
-    
+
     def __str__(self) -> str:
         return self.name
-
-
-class Order(models.Model):
-    class Meta:
-        verbose_name = "Заказ"
-        verbose_name_plural = "Заказы"
-
-    address = models.CharField(
-        verbose_name="Адрес доставки конфет",
-        max_length=1000,
-        null=False,
-        blank=True
-    )
-    date_time = models.DateTimeField(
-        verbose_name="Дата заказа",
-        auto_now_add=True
-    )
-
-    @property
-    def price(self) -> float:
-        return sum(
-            ordered_candy.price
-            for ordered_candy in OrderedCandy.objects.filter(order=self)
-        )
-
-    def __str__(self) -> str:
-        return str(self.date_time)
 
 
 class OrderedCandy(models.Model):
@@ -67,15 +46,8 @@ class OrderedCandy(models.Model):
         verbose_name_plural = "Заказанные конфеты"
 
     candy = models.ForeignKey(
-        Candy, 
+        Candy,
         verbose_name="Конфета",
-        on_delete=models.CASCADE, 
-        null=False, 
-        blank=True
-    )
-    order = models.ForeignKey(
-        Order,
-        verbose_name="Заказ",
         on_delete=models.CASCADE,
         null=False,
         blank=True
@@ -89,16 +61,54 @@ class OrderedCandy(models.Model):
     @property
     def price(self) -> float:
         return self.weight * self.candy.price / 100
-    
+
     def __str__(self) -> str:
-        return f"Заказ - {self.order.pk}, конфета - {self.candy.pk}"
+        return f"{self.pk}, конфета - {self.candy.pk}"
+
+
+class Order(models.Model):
+    class Meta:
+        verbose_name = "Заказ"
+        verbose_name_plural = "Заказы"
+
+    latitude = models.DecimalField(
+        verbose_name="Широта",
+        max_digits=10,
+        decimal_places=8,
+        default=round(generate_coordinates("Москва", 1)[0][0], 8),
+    )
+    longitude = models.DecimalField(
+        verbose_name="Долгота",
+        max_digits=11,
+        decimal_places=8,
+        default=round(generate_coordinates("Москва", 1)[0][1], 8),
+    )
+    date_time = models.DateTimeField(
+        verbose_name="Дата заказа",
+        auto_now_add=True
+    )
+    candies = models.ManyToManyField(
+        OrderedCandy,
+        verbose_name="Заказанные конфеты",
+        blank=True
+    )
+
+    @property
+    def price(self) -> float:
+        return sum(
+            ordered_candy.price
+            for ordered_candy in self.candies.all()
+        )
+
+    def __str__(self) -> str:
+        return str(self.date_time)
 
 
 class Feedback(models.Model):
     class Meta:
         verbose_name = "Отзыв"
         verbose_name_plural = "Отзывы"
-    
+
     author = models.CharField(
         verbose_name="Автор",
         max_length=32,

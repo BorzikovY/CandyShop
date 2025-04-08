@@ -18,21 +18,13 @@ class OrderedCandySerializer(ModelSerializer):
 
 
 class OrderSerializer(ModelSerializer):
-    candies = SerializerMethodField()
 
     class Meta:
         model = Order
-        fields = ('id', 'address', 'price', 'candies')
-
-    def get_candies(self, obj) -> list[OrderedCandySerializer]:
-        return OrderedCandySerializer(
-            OrderedCandy.objects.filter(order=obj),
-            many=True
-        ).data
+        fields = ('id', 'latitude', 'longitude', 'price', 'candies')
 
 
 class FeedbackSerializer(ModelSerializer):
     class Meta:
         model = Feedback
         fields = "__all__"
-
