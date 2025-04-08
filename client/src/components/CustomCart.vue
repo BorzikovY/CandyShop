@@ -16,7 +16,7 @@
     </template>
   </v-menu>
 
-    <v-dialog v-model="dialog" class="d-flex justify-center align-center justify-center" persistent>
+  <v-dialog v-model="dialog" class="d-flex justify-center align-center" persistent>
     <v-card class="d-flex justify-center align-center" max-width="800px">
       <v-card-title>Корзина</v-card-title>
       <v-card-text style="width: 100%;">
@@ -24,31 +24,62 @@
           <v-container
             v-for="product in products"
             :key="product.id"
-          class="d-flex flex-nowrap align-center" style="width: 100%;">
+            class="d-flex flex-nowrap align-center"
+            style="width: 100%;"
+          >
             <v-container class="d-flex flex-wrap flex-column">
               <p style="font-size: 17px">{{ product.name }}</p>
               <p style="font-size: 14px">{{ product.price }}/1гр</p>
             </v-container>
             <v-container class="align-center">
-              <v-text-field placeholder="Сколько грамм?"/>
+              <!-- Привязка v-model к объекту grams, где ключ - id товара -->
+              <v-text-field
+                v-model="grams[product.id]"
+                placeholder="Сколько грамм?"
+                type="number"
+              />
             </v-container>
           </v-container>
         </v-list>
       </v-card-text>
       <template v-slot:actions>
+        <v-btn @click="sendData">Заказать</v-btn>
         <v-btn text @click="dialog = false">Закрыть</v-btn>
       </template>
     </v-card>
   </v-dialog>
-
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, reactive } from 'vue';
 import cart from '../../public/cart.svg';
 import { products } from "@/components/testsArray/CartArray.vue";
+import axios from "axios";
 
+// Управление состоянием диалога
 const dialog = ref(false);
+// Для хранения введённого количества грамм по каждому товару
+const grams = reactive({});
+
+// Функция отправки данных на бекэнд
+const sendData = async () => {
+  // Формируем массив с данными товаров и введённым количеством грамм
+  const orderItems = products.map(product => ({
+    id: product.id,
+    name: product.name,
+    price: product.price,
+    grams: Number(grams[product.id]) || 0  // преобразуем в число, если значение отсутствует – 0
+  }));
+
+  console.log('Отправка данных:', orderItems);
+
+  try {
+    const response = await axios.post('/api/orders', { items: orderItems });
+    console.log('Ответ сервера:', response.data);
+  } catch (error) {
+    console.error('Ошибка при отправке данных:', error);
+  }
+}
 </script>
 
 <style lang="scss" scoped>
