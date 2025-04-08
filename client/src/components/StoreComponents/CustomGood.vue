@@ -14,7 +14,7 @@
      <v-card-text>{{ currentGood.description }}</v-card-text>
 
     <v-card-actions class="d-flex justify-space-between w-100 pa-3 align-self-end">
-      <v-btn style="color:#836398" text="Купить"></v-btn>
+      <v-btn style="color:#836398" @click="addingGoodToArray(currentGood)" text="Купить"></v-btn>
 
       <p style="color:#836398; width: fit-content" text="Explore">{{ currentGood.price }} &#8381;</p>
     </v-card-actions>
@@ -23,10 +23,13 @@
 
 <script setup>
 
-import CustomCart from "@/components/CustomCart.vue";
-
+import { products } from "@/components/testsArray/CartArray.vue";
+setInterval(() => console.log(products), 1000);
+const addingGoodToArray = (thisGood) => {
+  products.push(thisGood)
+}
 defineProps({
-  currentGood: Array
+  currentGood: Object
 })
 
 
