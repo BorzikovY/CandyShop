@@ -8,7 +8,10 @@ def get_city_bounds(
     city_name: str
 ) -> dict[str, tuple[Any, Any] | list[float]]:
     """Получить границы города (bounding box)"""
-    geolocator = Nominatim(user_agent="candy_shop_123_321_....")
+    geolocator = Nominatim(
+        user_agent="candyshop_app/1.0",
+        timeout=10
+    )
     location = geolocator.geocode(city_name, exactly_one=True, addressdetails=True)
 
     if not location:
