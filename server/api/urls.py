@@ -6,7 +6,7 @@ from drf_yasg import openapi
 
 from api.views import (
    CandyViewSet,
-   FeedbackViewSet, OrderViewSet,
+   FeedbackViewSet, OrderViewSet, OrderedCandyViewSet,
 )
 
 
@@ -18,13 +18,14 @@ schema_view = get_schema_view(
    ),
    public=True,
    permission_classes=(permissions.AllowAny,),
-   url="http://127.0.0.1:8080",
+   url="http://127.0.0.1:8000",
 )
 
 router = DefaultRouter()
 router.register('candies', CandyViewSet, basename='candy')
-router.register('feedbacks', FeedbackViewSet, basename='feedback')
+router.register('ordered_candies', OrderedCandyViewSet, basename='ordered_candy')
 router.register('orders', OrderViewSet, basename='order')
+router.register('feedbacks', FeedbackViewSet, basename='feedback')
 
 urlpatterns = [
    path('swagger<format>/', schema_view.without_ui(cache_timeout=0), name='schema-json'),
