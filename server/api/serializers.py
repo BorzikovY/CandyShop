@@ -1,5 +1,6 @@
-from rest_framework.fields import SerializerMethodField
-from rest_framework.serializers import ModelSerializer
+from rest_framework.fields import SerializerMethodField, IntegerField, FloatField
+from rest_framework.relations import PrimaryKeyRelatedField
+from rest_framework.serializers import ModelSerializer, Serializer
 from logic.models import Candy, Order, OrderedCandy, Feedback
 
 
@@ -28,3 +29,20 @@ class FeedbackSerializer(ModelSerializer):
     class Meta:
         model = Feedback
         fields = "__all__"
+
+
+class OrderedCandyCreateSerializer(ModelSerializer):
+    candy_id = PrimaryKeyRelatedField(
+        source='candy',
+        queryset=Candy.objects.all()
+    )
+    weight = IntegerField(min_value=1)
+
+    class Meta:
+        model = OrderedCandy
+        fields = ('candy_id', 'weight')
+
+
+class OrderCoordinatesSerializer(Serializer):
+    latitude = FloatField()
+    longitude = FloatField()
